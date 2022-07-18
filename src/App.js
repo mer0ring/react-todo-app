@@ -36,10 +36,6 @@ class App extends Component {
     }
   }
 
-  testFunction = () => {
-    return "hello";
-  }
-
   handleClick = (id) => {
     let newTodoData = this.state.todoData.filter(data => data.id !== id);
     this.setState({ todoData: newTodoData });
